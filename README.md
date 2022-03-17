@@ -6,7 +6,6 @@ El proyecto consiste en reescribir una clase polinomio hecha en Java usando Prol
 
 * [Representación de polinomios](#representación-de-polinomios)
 * [Operaciones con polinomios](#operaciones-con-polinomios)
-  * [Longitud](#longitud)
   * [Suma y resta](#suma-y-resta)
   * [Multiplicación](#multiplicación)
   * [Derivada](#derivada)
@@ -20,8 +19,8 @@ En este proyecto, los polinomios se representan usando listas. Una lista en Prol
 `[Elemento1, Elemento2, ...]`.
 
 Para crear tu polinomio utiliza una lista cuyos elementos sean los coeficientes que lo conforman. Estos coeficientes deben acomodarse de manera ascendente, es decir, se inicia con el coeficiente con exponente cero hasta el coeficiente con exponente mayor. Por ejemplo:    
-*  5x^3 + 4x + 11   ->  `[11, 4, 0, 5]`
-*  -3x^2 + 9x - 1   ->  `[-1, 9, -3]`
+*  y<sub>1</sub>(x) = 5x<sup>3</sup> + 4x + 11   ->  `[11, 4, 0, 5]`
+*  y<sub>2</sub>(x) = -3x<sup>2</sup> + 9x - 1   ->  `[-1, 9, -3]`
 
 Se deben expresar los polinomios de esta manera para posteriormente realizar operaciones sobre ellos.
 
@@ -31,19 +30,17 @@ Una vez que sabemos como representar nuestros polinomios, debemos elegir que ope
 
 A continuación, se detallan las posibles operaciones a realizar sobre ellos.
 
-### Longitud
-
-La longitud de un polinomio está dada por el exponente más alto del cual está compuesto. Para obtener el grado usamos 
-
 ### Suma y resta
 
 Para realizar la suma o resta entres dos polinomios se debe realizar una consulta en la cual se especifíquen dos polinomios que serán sumados o restados. El resultado de la operación se guardará en una variable declarada por el usuario. Las reglas que realizan estas operaciones son las siguientes:
 * `polySum(Ms, Ns, Ss)`
 * `polyMin(Ms, Ns, Ss)`
 
-Los primeros dos argumentos representan los polinomios sobre los cuales se realizará la operación. El tercer argumento debe ser una variable que guarde el resultado devuelto. Por ejemplo, si tenemos dos polinomios A = {5x^2 - 3x + 2} y B = {x^3 - 2x^2 + 7x -11}, podemos ejemplificar ambas operaciones: A + B, A - B.
+Los primeros dos argumentos representan los polinomios sobre los cuales se realizará la operación. El tercer argumento debe ser una variable que guarde el resultado devuelto. Por ejemplo, si tenemos dos polinomios A(x) = 4x<sup>3</sup> + 3x<sup>2</sup> + 1 y B(x) = 3x<sup>2</sup> + 5, podemos ejemplificar ambas operaciones: A + B, A - B.
 
+La consulta realizada y el resultado de ambas operaciones se muestra sobre la terminal de SWI-Prolog.
 
+![sumaresta](https://user-images.githubusercontent.com/70402438/158848268-8169fdeb-c847-45bc-adf7-7ecba6bde642.png)
 
 ### Multiplicación
 
