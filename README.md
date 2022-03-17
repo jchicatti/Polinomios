@@ -26,7 +26,7 @@ Se deben expresar los polinomios de esta manera para posteriormente realizar ope
 
 ## Operaciones con polinomios
 
-Una vez que sabemos como representar nuestros polinomios, debemos elegir que operación deseamos realizar sobre ellos. 
+Una vez que sabemos como representar nuestros polinomios, debemos elegir que operación deseamos realizar sobre ellos. Para aprovechar la funcionalidad del proyecto, es necesario realizar **consultas**. Mediante estas consultas podremos llamar nuestras distintas reglas para manejar polinomios. La terminal de Prolog recibirá una consulta después de `?-` y cada una de ellas debe termina con un punto.
 
 A continuación, se detallan las posibles operaciones a realizar sobre ellos.
 
