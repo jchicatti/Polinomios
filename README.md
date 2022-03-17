@@ -33,13 +33,15 @@ A continuación, se detallan las posibles operaciones a realizar sobre ellos.
 
 ### Longitud
 
+La longitud de un polinomio está dada por el exponente más alto del cual está compuesto. Para obtener el grado usamos 
+
 ### Suma y resta
 
 Para realizar la suma o resta entres dos polinomios se debe realizar una consulta en la cual se especifíquen dos polinomios que serán sumados o restados. El resultado de la operación se guardará en una variable declarada por el usuario. Las reglas que realizan estas operaciones son las siguientes:
 * `polySum(Ms, Ns, Ss)`
 * `polyMin(Ms, Ns, Ss)`
 
-Los primeros dos argumentos representan los polinomios sobre los cuales se realizará la operación. El tercer argumento debe ser una variable que guarde el resultado devuelto. Por ejemplo, si tenemos dos polinomios A = {5x^2 - 3x + 2} y B = {x^3 - 2x^2 + 7x -11}, A + B y A - B se realiza de la siguiente manera:
+Los primeros dos argumentos representan los polinomios sobre los cuales se realizará la operación. El tercer argumento debe ser una variable que guarde el resultado devuelto. Por ejemplo, si tenemos dos polinomios A = {5x^2 - 3x + 2} y B = {x^3 - 2x^2 + 7x -11}, podemos ejemplificar ambas operaciones: A + B, A - B.
 
 
 
