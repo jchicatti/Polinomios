@@ -20,12 +20,16 @@ En este proyecto, los polinomios se representan usando listas. Una lista en Prol
 `[Elemento1, Elemento2, ...]`.
 
 Para crear tu polinomio utiliza una lista cuyos elementos sean los coeficientes que lo conforman. Estos coeficientes deben acomodarse de manera ascendente, es decir, se inicia con el coeficiente con exponente cero hasta el coeficiente con exponente mayor. Por ejemplo:    
-*  5x^3 + 4x + 11 -> `[11, 4, 0, 5]`
-*  -3x^2 + 9x - 1 -> `[-1, 9, -3]`
+*  5x^3 + 4x + 11   ->  `[11, 4, 0, 5]`
+*  -3x^2 + 9x - 1   ->  `[-1, 9, -3]`
 
 Debes expresar los polinomios de esta manera para posteriormente realizar operaciones sobre ellos.
 
 ## Operaciones con polinomios
+
+Una vez que sabemos como representar nuestros polinomios, debemos elegir que operación deseamos realizar sobre ellos. 
+
+A continuación, se detallan las posibles operaciones a realizar sobre ellos.
 
 ### Longitud
 
