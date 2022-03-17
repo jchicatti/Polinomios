@@ -11,7 +11,6 @@ El proyecto consiste en reescribir una clase polinomio hecha en Java usando Prol
   * [Derivada](#derivada)
   * [Composición](#composición)
   * [Evaluación](#evaluación)
-  * [Impresión](#impresión)
 
 ## Representación de polinomios
 
@@ -44,10 +43,18 @@ La consulta realizada y el resultado de ambas operaciones se muestra sobre la te
 
 ### Multiplicación
 
+![mult](https://user-images.githubusercontent.com/70402438/158851889-74ebc5bf-81b4-43c0-b6e0-e1cdeff5f345.png)
+
 ### Derivada
+
+![dif](https://user-images.githubusercontent.com/70402438/158851924-e37307e2-791d-44e7-80e0-f2eba92fca65.png)
 
 ### Composición
 
+![comp](https://user-images.githubusercontent.com/70402438/158851959-db217856-de7a-4a8a-8a85-668e12a00bf2.png)
+
 ### Evaluación
 
-### Impresión
+![eval](https://user-images.githubusercontent.com/70402438/158851994-36e5635c-6b21-4872-8450-ae431067e2a9.png)
+
+
