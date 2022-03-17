@@ -23,7 +23,7 @@ Para crear tu polinomio utiliza una lista cuyos elementos sean los coeficientes 
 *  5x^3 + 4x + 11   ->  `[11, 4, 0, 5]`
 *  -3x^2 + 9x - 1   ->  `[-1, 9, -3]`
 
-Debes expresar los polinomios de esta manera para posteriormente realizar operaciones sobre ellos.
+Se deben expresar los polinomios de esta manera para posteriormente realizar operaciones sobre ellos.
 
 ## Operaciones con polinomios
 
@@ -34,6 +34,14 @@ A continuación, se detallan las posibles operaciones a realizar sobre ellos.
 ### Longitud
 
 ### Suma y resta
+
+Para realizar la suma o resta entres dos polinomios se debe realizar una consulta en la cual se especifíquen dos polinomios que serán sumados o restados. El resultado de la operación se guardará en una variable declarada por el usuario. Las reglas que realizan estas operaciones son las siguientes:
+* `polySum(Ms, Ns, Ss)`
+* `polyMin(Ms, Ns, Ss)`
+
+Los primeros dos argumentos representan los polinomios sobre los cuales se realizará la operación. El tercer argumento debe ser una variable que guarde el resultado devuelto. Por ejemplo, si tenemos dos polinomios A = {5x^2 - 3x + 2} y B = {x^3 - 2x^2 + 7x -11}, A + B y A - B se realiza de la siguiente manera:
+
+
 
 ### Multiplicación
 
