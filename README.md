@@ -1,6 +1,6 @@
 # Prolog: clase polinomio
 
-El proyecto consiste en reescribir una clase polinomio hecha en Java usando Prolog como lenguaje de programación. Se debe mantener la funcionalidad de la clase original en Java. Por lo tanto, se debe poder hacer operaciones sobre polinomios tales como sumar, multiplicar, obtener su grado, entre otros. Además, debe incluir un código que pruebe la funcionalidad del programa que use los mismos polinomios y ejemplos del programa en Java.
+El proyecto consiste en reescribir una clase polinomio hecha en Java usando Prolog como lenguaje de programación. Se debe mantener la funcionalidad de la clase Java original. Por lo tanto, se debe poder hacer operaciones sobre polinomios tales como sumar, multiplicar, evaluar, entre otros. Además, debe incluir un código que pruebe la funcionalidad del programa. Los polinomios y ejemplos deben ser iguales a los del programa en Java.
 
 ## Tabla de contenidos
 
@@ -31,9 +31,9 @@ A continuación, se detallan las posibles operaciones a realizar sobre ellos.
 
 ### Suma y resta
 
-Para realizar la suma o resta entres dos polinomios se debe realizar una consulta en la cual se especifíquen dos polinomios que serán sumados o restados. El resultado de la operación se guardará en una variable declarada por el usuario. Las reglas que realizan estas operaciones son las siguientes:
-* `polySum(Ms, Ns, Ss)`
-* `polyMin(Ms, Ns, Ss)`
+Para realizar la suma o resta entres dos polinomios se debe hacer una consulta en la cual se especifíquen dos polinomios que serán sumados o restados. El resultado de la operación se guardará en una variable declarada por el usuario. Las reglas que realizan estas operaciones son las siguientes:
+* `polySum(Ms, Ns, Ss)` (suma)
+* `polyMin(Ms, Ns, Ss)` (resta)
 
 Los primeros dos argumentos representan los polinomios sobre los cuales se realizará la operación. El tercer argumento debe ser una variable que guarde el resultado devuelto. Por ejemplo, si tenemos dos polinomios A(x) = 4x<sup>3</sup> + 3x<sup>2</sup> + 1 y B(x) = 3x<sup>2</sup> + 5, podemos ejemplificar ambas operaciones: A + B, A - B.
 
@@ -51,9 +51,17 @@ La consulta realizada y el resultado de ambas operaciones se muestra sobre la te
 
 ### Composición
 
+La composición se usa cuando se busca remplazar una variable dentro de un polinomio con otro. En otras palabras, si tenemos un polinomio con variable x, buscamos reemplazar todas esas 'x' por otro polinomio. Si tenemos Y(x) = x + 1 y Z(x) = x + 12, entonces Y(Z) = (x + 12) + 1. 
+
+Por ejemplo, si seguimos usando A(x) = 4x<sup>3</sup> + 3x<sup>2</sup> + 1 y B(x) = 3x<sup>2</sup> + 5. Es posible realizar A(B):
+
 ![comp](https://user-images.githubusercontent.com/70402438/158851959-db217856-de7a-4a8a-8a85-668e12a00bf2.png)
 
 ### Evaluación
+
+La evaluación consiste en obtener el valor del polinomio cuando nuestra variable, en este caso x, se va reemplazada por un valor numérico. Se utiliza la regla `polyEval(C,Ms,V,Ss)`. El primer argumento (C) siempre es cero, ya que es el exponente al que se eleva el término actual. Recibe en Ms el polinomio a evaluar y en V el valor a usar. El resultado se guarda en Ss.
+
+Por ejemplo, podemos evaluar A(x) = 4x<sup>3</sup> + 3x<sup>2</sup> + 1 con 12, es decir A(12):
 
 ![eval](https://user-images.githubusercontent.com/70402438/158851994-36e5635c-6b21-4872-8450-ae431067e2a9.png)
 
