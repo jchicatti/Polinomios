@@ -8,15 +8,16 @@ En Prolog no existen las funciones, solo las reglas. Para facilitar la comprensi
 
 ## Tabla de contenidos
 
-* [Representación de polinomios](#representación-de-polinomios)
-* [Operaciones con polinomios](#operaciones-con-polinomios)
-  * [Suma y resta](#suma-y-resta)
-  * [Multiplicación](#multiplicación)
-  * [Derivada](#derivada)
-  * [Composición](#composición)
-  * [Evaluación](#evaluación)
+* [Cómo representar polinomios](#cómo-representar-polinomios)
+* [Cómo hacer consultas](#cómo-hacer-consultas)
+* [Qué operaciones se pueden hacer](#qué-operaciones-se-pueden-hacer)
+  * [Sumar y restar](#sumar-y-restar)
+  * [Multiplicar](#multiplicar)
+  * [Derivar](#derivar)
+  * [Componer](#componer)
+  * [Evaluar](#evaluar)
 
-## Representación de polinomios
+## Cómo representar polinomios
 
 En este proyecto, los polinomios se representan usando listas. Una lista en Prolog se representa de la siguiente manera:   
 `[Elemento1, Elemento2, ...]`.
@@ -35,35 +36,33 @@ La terminal de Prolog recibe una consulta después de `?-` y cada una de ellas d
 
 Para poder empezar a usar el programa en Prolog siga el siguiente diagrama:
 
-
-
-## Operaciones con polinomios
+## Qué operaciones se pueden hacer
 
 A continuación, se detalla cada posible operacion a realizar sobre polinomios.
 
-### Suma y resta
+### Sumar y restar
 
-Para realizar la suma o resta entres dos polinomios se debe hacer una consulta en la cual se especifíquen dos polinomios que serán sumados o restados. El resultado de la operación se guardará en una variable declarada por el usuario. Las reglas que realizan estas operaciones son las siguientes:
+Para realizar la suma o resta entre dos polinomios se debe hacer una consulta en la cual se especifíquen dos polinomios que serán sumados o restados. El resultado de la operación se guardará en una variable declarada por el usuario. Las funciones que realizan estas operaciones son las siguientes:
 * `polySum(Ms, Ns, Ss)` (suma)
 * `polyMin(Ms, Ns, Ss)` (resta)
 
-Los primeros dos argumentos representan los polinomios sobre los cuales se realizará la operación. El tercer argumento debe ser una variable que guarde el resultado devuelto. Por ejemplo, si tenemos dos polinomios A(x) = 4x<sup>3</sup> + 3x<sup>2</sup> + 1 y B(x) = 3x<sup>2</sup> + 5, podemos ejemplificar ambas operaciones: A + B, A - B.
+Los primeros dos argumentos representan los polinomios sobre los cuales se realizará la operación. El tercer argumento debe ser una variable que guarde el resultado devuelto. Por ejemplo, si tenemos dos polinomios A(x) = 4x<sup>3</sup> + 3x<sup>2</sup> + 1 y B(x) = 3x<sup>2</sup> + 5, podemos realizar ambas operaciones: A + B, A - B.
 
-La consulta realizada y el resultado de ambas operaciones se muestra sobre la terminal de SWI-Prolog.
+La consulta realizada y el resultado se muestra sobre la terminal de SWI-Prolog.
 
 ![sumaresta](https://user-images.githubusercontent.com/70402438/158848268-8169fdeb-c847-45bc-adf7-7ecba6bde642.png)
 
-### Multiplicación
+### Multiplicar
 
 
 
 ![mult](https://user-images.githubusercontent.com/70402438/158851889-74ebc5bf-81b4-43c0-b6e0-e1cdeff5f345.png)
 
-### Derivada
+### Derivar
 
 ![dif](https://user-images.githubusercontent.com/70402438/158851924-e37307e2-791d-44e7-80e0-f2eba92fca65.png)
 
-### Composición
+### Componer
 
 La composición se usa cuando se busca remplazar una variable dentro de un polinomio con otro. En otras palabras, si tenemos un polinomio con variable x, buscamos reemplazar todas esas 'x' por otro polinomio. Si tenemos Y(x) = x + 1 y Z(x) = x + 12, entonces Y(Z) = (x + 12) + 1. 
 
@@ -71,9 +70,9 @@ Por ejemplo, si seguimos usando A(x) = 4x<sup>3</sup> + 3x<sup>2</sup> + 1 y B(x
 
 ![comp](https://user-images.githubusercontent.com/70402438/158851959-db217856-de7a-4a8a-8a85-668e12a00bf2.png)
 
-### Evaluación
+### Evaluar
 
-La evaluación consiste en obtener el valor del polinomio cuando nuestra variable, en este caso x, se va reemplazada por un valor numérico. Se utiliza la regla `polyEval(C,Ms,V,Ss)`. El primer argumento (C) siempre es cero, ya que es el exponente al que se eleva el término actual. Recibe en Ms el polinomio a evaluar y en V el valor a usar. El resultado se guarda en Ss.
+La evaluación consiste en obtener el valor del polinomio cuando nuestra variable, en este caso x, es reemplazada por un valor numérico. Se utiliza la función `polyEval(C,Ms,V,Ss)`. El primer argumento (C) siempre es cero, ya que es el exponente al que se eleva el término actual. Recibe en Ms el polinomio a evaluar y en V el valor a usar. El resultado se guarda en Ss.
 
 Por ejemplo, podemos evaluar A(x) = 4x<sup>3</sup> + 3x<sup>2</sup> + 1 con 12, es decir A(12):
 
