@@ -36,6 +36,8 @@ La terminal de Prolog recibe una consulta después de `?-` y cada una de ellas d
 
 Para poder empezar a usar el programa en Prolog siga el siguiente diagrama:
 
+![DiagramaPrologCEC](https://user-images.githubusercontent.com/70402438/159089543-65f4790a-e34c-41b8-ab88-0e907c016a84.png)
+
 ## Qué operaciones se pueden hacer
 
 A continuación, se detalla cada posible operacion a realizar sobre polinomios.
