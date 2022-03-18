@@ -1,6 +1,10 @@
 # Prolog: clase polinomio
 
-El proyecto consiste en reescribir una clase polinomio hecha en Java usando Prolog como lenguaje de programación. Se debe mantener la funcionalidad de la clase Java original. Por lo tanto, se debe poder hacer operaciones sobre polinomios tales como sumar, multiplicar, evaluar, entre otros. Además, debe incluir un código que pruebe la funcionalidad del programa. Los polinomios y ejemplos deben ser iguales a los del programa en Java.
+El siguiente código de Prolog es bastante inusual. Prolog pertenece a la familia de lenguajes de programación lógico interpretado, mientras que Java es el lenguaje orientado a objetos por excelencia.
+
+Este proyecto consiste en replicar a una clase de objetos tipo Polinomio hecha en Java usando Prolog como lenguaje de programación. Se debe mantener la funcionalidad de la clase Java original. Por lo tanto, se debe poder hacer operaciones sobre polinomios tales como sumar, multiplicar, evaluar, entre otros. Esto es especialmente difícil en Prolog. Además, debe incluir un código que pruebe la funcionalidad del programa. Los polinomios y ejemplos a probar deben ser iguales a los del programa dado en Java.
+
+En Prolog no existen las funciones, solo las reglas. Para facilitar la comprensión del documento se considerarán como lo mismo.
 
 ## Tabla de contenidos
 
@@ -18,16 +22,24 @@ En este proyecto, los polinomios se representan usando listas. Una lista en Prol
 `[Elemento1, Elemento2, ...]`.
 
 Para crear tu polinomio utiliza una lista cuyos elementos sean los coeficientes que lo conforman. Estos coeficientes deben acomodarse de manera ascendente, es decir, se inicia con el coeficiente con exponente cero hasta el coeficiente con exponente mayor. Por ejemplo:    
-*  y<sub>1</sub>(x) = 5x<sup>3</sup> + 4x + 11   ->  `[11, 4, 0, 5]`
-*  y<sub>2</sub>(x) = -3x<sup>2</sup> + 9x - 1   ->  `[-1, 9, -3]`
+*  y<sub>1</sub>(x) = 5x<sup>3</sup> + 4x + 11 &nbsp;&nbsp;&nbsp; se escribe como `Y1 = [11, 4, 0, 5]`
+*  y<sub>2</sub>(x) = -3x<sup>2</sup> + 9x - 1 &nbsp;&nbsp;&nbsp;&nbsp; se escribe como `Y2 = [-1, 9, -3]`
 
 Se deben expresar los polinomios de esta manera para posteriormente realizar operaciones sobre ellos.
 
+## Cómo hacer consultas
+
+Una vez que sabemos como representar nuestros polinomios, debemos elegir que operación deseamos realizar sobre ellos. Para aprovechar la funcionalidad del proyecto, es necesario realizar **consultas**. Mediante estas consultas podremos llamar a nuestras distintas funciones para manejar polinomios.
+
+La terminal de Prolog recibe una consulta después de `?-` y cada una de ellas debe terminar con un punto.
+
+Para poder empezar a usar el programa en Prolog siga el siguiente diagrama:
+
+
+
 ## Operaciones con polinomios
 
-Una vez que sabemos como representar nuestros polinomios, debemos elegir que operación deseamos realizar sobre ellos. Para aprovechar la funcionalidad del proyecto, es necesario realizar **consultas**. Mediante estas consultas podremos llamar nuestras distintas reglas para manejar polinomios. La terminal de Prolog recibirá una consulta después de `?-` y cada una de ellas debe termina con un punto.
-
-A continuación, se detallan las posibles operaciones a realizar sobre ellos.
+A continuación, se detalla cada posible operacion a realizar sobre polinomios.
 
 ### Suma y resta
 
@@ -42,6 +54,8 @@ La consulta realizada y el resultado de ambas operaciones se muestra sobre la te
 ![sumaresta](https://user-images.githubusercontent.com/70402438/158848268-8169fdeb-c847-45bc-adf7-7ecba6bde642.png)
 
 ### Multiplicación
+
+
 
 ![mult](https://user-images.githubusercontent.com/70402438/158851889-74ebc5bf-81b4-43c0-b6e0-e1cdeff5f345.png)
 
