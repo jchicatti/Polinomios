@@ -1,4 +1,4 @@
-# Prolog: clase polinomio
+# Polinomios en Prolog
 
 El siguiente código de Prolog es bastante inusual. Prolog pertenece a la familia de lenguajes de programación lógico interpretado, mientras que Java es el lenguaje orientado a objetos por excelencia.
 
