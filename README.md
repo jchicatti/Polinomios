@@ -54,11 +54,15 @@ La consulta realizada y el resultado se muestra sobre la terminal de SWI-Prolog.
 
 ### Multiplicar
 
-
+Para multiplicar dos polinomios se utiliza la función `poly_prod(Ms, Ns, Xs)`. Los polinomios a multiplicar son Ms y Ns. El resultado se guarda en Xs. Si usamos, de nuevo, los polinomios A(x) = 4x<sup>3</sup> + 3x<sup>2</sup> + 1 y B(x) = 3x<sup>2</sup> + 5, tenemos:
 
 ![mult](https://user-images.githubusercontent.com/70402438/158851889-74ebc5bf-81b4-43c0-b6e0-e1cdeff5f345.png)
 
 ### Derivar
+
+La derivada de un polinomio se obtiene con `polyDif(C, Ms, Ds)`. El primer argumento, C, es un contador para eliminar el término constante que se vuelve cero. Ms es el elemento a derivar y Ds guarda el resultado.
+
+En este caso, derivamos los dos polinomios: A(x) = 4x<sup>3</sup> + 3x<sup>2</sup> + 1 y B(x) = 3x<sup>2</sup> + 5.
 
 ![dif](https://user-images.githubusercontent.com/70402438/158851924-e37307e2-791d-44e7-80e0-f2eba92fca65.png)
 
