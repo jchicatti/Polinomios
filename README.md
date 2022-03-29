@@ -30,11 +30,11 @@ Se deben expresar los polinomios de esta manera para posteriormente realizar ope
 
 ## Cómo hacer consultas
 
-Una vez que sabemos cómo representar nuestros polinomios, debemos elegir qué operación deseamos realizar sobre ellos. Para aprovechar la funcionalidad del proyecto, es necesario realizar **consultas**. Mediante estas consultas podremos llamar a nuestras distintas funciones para manejar polinomios.
+Una vez que sabemos cómo representar nuestros polinomios, debemos elegir qué operación deseamos realizar sobre ellos. Para aprovechar la funcionalidad del proyecto, se utilizarán **consultas**. Mediante estas consultas podremos llamar a nuestras distintas funciones para manejar polinomios.
 
 La terminal de Prolog recibe una consulta después de `?-` y cada una de ellas debe terminar con un punto.
 
-Para poder empezar a usar el programa en Prolog siga el siguiente diagrama:
+Para poder empezar a usar el programa en Prolog siga los siguientes pasos:
 
 ![DiagramaPrologCEC](https://user-images.githubusercontent.com/70402438/159089543-65f4790a-e34c-41b8-ab88-0e907c016a84.png)
 
