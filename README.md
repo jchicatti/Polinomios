@@ -2,7 +2,7 @@
 
 El siguiente código de Prolog es bastante inusual. Prolog pertenece a la familia de lenguajes de programación lógico interpretado, mientras que Java es el lenguaje orientado a objetos por excelencia.
 
-Este proyecto consiste en replicar a una clase de objetos tipo Polinomio hecha en Java usando Prolog como lenguaje de programación. Se debe mantener la funcionalidad de la clase Java original. Por lo tanto, se debe poder hacer operaciones sobre polinomios tales como sumar, multiplicar, evaluar, entre otros. Esto es especialmente difícil en Prolog. Además, debe incluir un código que pruebe la funcionalidad del programa. Los polinomios y ejemplos por probar deben ser iguales a los del programa dado en Java.
+Este proyecto replica una clase de objetos tipo Polinomio hecha en Java usando Prolog como lenguaje de programación. Se debe mantener la funcionalidad de la clase Java original. Por lo tanto, se debe poder hacer operaciones sobre polinomios tales como sumar, multiplicar, evaluar, entre otros. Esto es especialmente difícil en Prolog. Además, debe incluir un código que pruebe la funcionalidad del programa. Los polinomios y ejemplos por probar deben ser iguales a los del programa dado en Java.
 
 En Prolog no existen las funciones, solo las reglas. Para facilitar la comprensión del documento se considerarán como lo mismo.
 
@@ -19,7 +19,7 @@ En Prolog no existen las funciones, solo las reglas. Para facilitar la comprensi
 
 ## Cómo representar polinomios
 
-En este proyecto, los polinomios se representan usando listas. Una lista en Prolog se representa de la siguiente manera:   
+Los polinomios se representan de la siguiente manera usando listas:  
 `[Elemento1, Elemento2, ...]`.
 
 Para crear tu polinomio utiliza una lista cuyos elementos sean los coeficientes que lo conforman. Estos coeficientes deben acomodarse de manera ascendente, es decir, se inicia con el coeficiente con exponente cero hasta el coeficiente con exponente mayor. Por ejemplo:    
