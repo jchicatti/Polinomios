@@ -45,8 +45,6 @@ Para poder empezar a usar el programa en Prolog siga los siguientes pasos:
 
 ## Qué operaciones se pueden hacer
 
-A continuación, se detalla cada posible operación a realizar sobre polinomios.
-
 ### Sumar y restar
 
 Para realizar la suma o resta entre dos polinomios se debe hacer una consulta en la cual se especifiquen dos polinomios que serán sumados o restados. El resultado de la operación se guardará en una variable declarada por el usuario. Las funciones que realizan estas operaciones son las siguientes:
