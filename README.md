@@ -27,7 +27,7 @@ En Prolog no existen las funciones, solo las reglas. Para facilitar la comprensi
 Los polinomios se representan de la siguiente manera usando listas:  
 `[Elemento1, Elemento2, ...]`.
 
-Para crear tu polinomio utiliza una lista cuyos elementos sean los coeficientes que lo conforman. Estos coeficientes deben acomodarse de manera ascendente, es decir, se inicia con el coeficiente con exponente cero hasta el coeficiente con exponente mayor. Por ejemplo:    
+Para crear un polinomio se utiliza una lista cuyos elementos sean los coeficientes que lo conforman. Estos coeficientes deben acomodarse de manera ascendente, es decir, se inicia con el coeficiente con exponente cero hasta el coeficiente con exponente mayor. Por ejemplo:    
 *  y<sub>1</sub>(x) = 5x<sup>3</sup> + 4x + 11 &nbsp;&nbsp;&nbsp; se escribe como `Y1 = [11, 4, 0, 5]`
 *  y<sub>2</sub>(x) = -3x<sup>2</sup> + 9x - 1 &nbsp;&nbsp;&nbsp;&nbsp; se escribe como `Y2 = [-1, 9, -3]`
 
