@@ -16,11 +16,9 @@ Este proyecto replica una clase de objetos tipo Polinomio hecha en Java usando P
 
 ## Características generales
 
-El siguiente código de Prolog es bastante inusual. Prolog pertenece a la familia de lenguajes de programación lógico interpretado, mientras que Java es el lenguaje orientado a objetos por excelencia.
+El siguiente código de Prolog es bastante inusual. Prolog pertenece a la familia de lenguajes de programación lógico interpretado, mientras que Java es el lenguaje orientado a objetos por excelencia. En Prolog no existen las funciones, solo las reglas. Para facilitar la comprensión del documento se considerarán como lo mismo.
 
-Se debe mantener la funcionalidad de la clase Java original. Por lo tanto, se debe poder hacer operaciones sobre polinomios tales como sumar, multiplicar, evaluar, entre otros. Esto es especialmente difícil en Prolog. Además, debe incluir un código que pruebe la funcionalidad del programa. Los polinomios y ejemplos por probar deben ser iguales a los del programa dado en Java.
-
-En Prolog no existen las funciones, solo las reglas. Para facilitar la comprensión del documento se considerarán como lo mismo.
+El programa generado debe mantener la funcionalidad de la clase Java original. Por lo tanto, se debe poder hacer operaciones sobre polinomios tales como sumar, multiplicar, evaluar, entre otros. Esto es especialmente difícil en Prolog. Además, debe incluir un código que pruebe la funcionalidad del programa. Los polinomios y ejemplos por probar deben ser iguales a los del programa dado en Java.
 
 ## Cómo representar polinomios
 
